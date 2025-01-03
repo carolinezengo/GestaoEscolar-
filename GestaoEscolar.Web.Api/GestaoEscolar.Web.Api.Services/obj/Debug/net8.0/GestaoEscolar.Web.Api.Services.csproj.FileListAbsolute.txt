@@ -1,0 +1,17 @@
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Services.deps.json
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Services.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Services.pdb
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Model.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Repository.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Model.pdb
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\bin\Debug\net8.0\GestaoEscolar.Web.Api.Repository.pdb
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.csproj.AssemblyReference.cache
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.AssemblyInfoInputs.cache
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.AssemblyInfo.cs
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.csproj.CoreCompileInputs.cache
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEs.8C1EA67D.Up2Date
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\refint\GestaoEscolar.Web.Api.Services.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\GestaoEscolar.Web.Api.Services.pdb
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net8.0\ref\GestaoEscolar.Web.Api.Services.dll

@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GestaoEscolar.Web.Api.Services/1.0.0": {
+        "dependencies": {
+          "GestaoEscolar.Web.Api.Model": "1.0.0",
+          "GestaoEscolar.Web.Api.Repository": "1.0.0"
+        },
+        "runtime": {
+          "GestaoEscolar.Web.Api.Services.dll": {}
+        }
+      },
+      "GestaoEscolar.Web.Api.Model/1.0.0": {
+        "runtime": {
+          "GestaoEscolar.Web.Api.Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GestaoEscolar.Web.Api.Repository/1.0.0": {
+        "dependencies": {
+          "GestaoEscolar.Web.Api.Model": "1.0.0"
+        },
+        "runtime": {
+          "GestaoEscolar.Web.Api.Repository.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GestaoEscolar.Web.Api.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestaoEscolar.Web.Api.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestaoEscolar.Web.Api.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.App\\GestaoEscolar.Web.Api.App.csproj": {}
+  },
+  "projects": {
+    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.App\\GestaoEscolar.Web.Api.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.App\\GestaoEscolar.Web.Api.App.csproj",
+        "projectName": "GestaoEscolar.Web.Api.App",
+        "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.App\\GestaoEscolar.Web.Api.App.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {
+                "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj"
+              },
+              "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Services\\GestaoEscolar.Web.Api.Services.csproj": {
+                "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Services\\GestaoEscolar.Web.Api.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj",
+        "projectName": "GestaoEscolar.Web.Api.Model",
+        "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Repository\\GestaoEscolar.Web.Api.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Repository\\GestaoEscolar.Web.Api.Repository.csproj",
+        "projectName": "GestaoEscolar.Web.Api.Repository",
+        "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Repository\\GestaoEscolar.Web.Api.Repository.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {
+                "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Services\\GestaoEscolar.Web.Api.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Services\\GestaoEscolar.Web.Api.Services.csproj",
+        "projectName": "GestaoEscolar.Web.Api.Services",
+        "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Services\\GestaoEscolar.Web.Api.Services.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {
+                "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj"
+              },
+              "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Repository\\GestaoEscolar.Web.Api.Repository.csproj": {
+                "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Repository\\GestaoEscolar.Web.Api.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.35, 6.0.35]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

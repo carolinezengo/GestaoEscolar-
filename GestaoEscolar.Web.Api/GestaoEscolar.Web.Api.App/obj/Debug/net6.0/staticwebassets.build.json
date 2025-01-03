@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FxdBRUN4S7GZLwOF/7NLZrVxIOPRSjbMoQLsA5ONkN4=",
+  "Source": "GestaoEscolar.Web.Api.App",
+  "BasePath": "_content/GestaoEscolar.Web.Api.App",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,11 @@
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\bin\Debug\net8.0\GestaoEscolar.Web.Api.Model.deps.json
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\bin\Debug\net8.0\GestaoEscolar.Web.Api.Model.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\bin\Debug\net8.0\GestaoEscolar.Web.Api.Model.pdb
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\GestaoEscolar.Web.Api.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\GestaoEscolar.Web.Api.Model.AssemblyInfoInputs.cache
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\GestaoEscolar.Web.Api.Model.AssemblyInfo.cs
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\GestaoEscolar.Web.Api.Model.csproj.CoreCompileInputs.cache
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\GestaoEscolar.Web.Api.Model.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\refint\GestaoEscolar.Web.Api.Model.dll
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\GestaoEscolar.Web.Api.Model.pdb
+C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Model\obj\Debug\net8.0\ref\GestaoEscolar.Web.Api.Model.dll

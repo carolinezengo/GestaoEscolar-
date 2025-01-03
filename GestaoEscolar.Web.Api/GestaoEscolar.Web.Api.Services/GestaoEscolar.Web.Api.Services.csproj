@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestaoEscolar.Web.Api.Model\GestaoEscolar.Web.Api.Model.csproj" />
+    <ProjectReference Include="..\GestaoEscolar.Web.Api.Repository\GestaoEscolar.Web.Api.Repository.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

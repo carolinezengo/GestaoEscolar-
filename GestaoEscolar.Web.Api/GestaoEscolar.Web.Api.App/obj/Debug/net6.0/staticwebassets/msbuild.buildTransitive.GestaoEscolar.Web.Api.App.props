@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\GestaoEscolar.Web.Api.App.props" />
+</Project>
