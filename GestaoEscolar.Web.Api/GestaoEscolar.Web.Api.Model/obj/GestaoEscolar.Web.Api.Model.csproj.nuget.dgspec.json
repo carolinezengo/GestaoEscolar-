@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {}
+    "C:\\GestaoEscolar\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {}
   },
   "projects": {
-    "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {
+    "C:\\GestaoEscolar\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj",
+        "projectUniqueName": "C:\\GestaoEscolar\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj",
         "projectName": "GestaoEscolar.Web.Api.Model",
-        "projectPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj",
+        "projectPath": "C:\\GestaoEscolar\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\GestaoEscolar.Web.Api.Model.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\GESTAOESCOLAR\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\obj\\",
+        "outputPath": "C:\\GestaoEscolar\\GestaoEscolar.Web.Api\\GestaoEscolar.Web.Api.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Schema;
+using Castle.DynamicProxy.Generators.Emitters.SimpleAST;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace GestaoEscolar.Web.Api.Repository
@@ -10,48 +12,56 @@ namespace GestaoEscolar.Web.Api.Repository
     public abstract class Repository<TModel>
      where TModel: Model.Model
     {
-        protected GestaoEscolarDB Db {get; set;} 
-        protected List<TModel> DbSet {get; set;}
-        public Repository(GestaoEscolarDB db){
+        protected GestaoEscolarContext Db {get; set;} 
+        protected DbSet<TModel> DbSet {get; set;}
+        public Repository(GestaoEscolarContext db){
             Db = db;
             DbSet= Db.Set<TModel>();
         }
-        public virtual TModel Insert(TModel obj){
-            DbSet.Add(obj);
-            var index = DbSet.IndexOf(obj);
-            index++;
-            obj.Id= index;
+        public async virtual Task<TModel> Insert(TModel obj){
+           await DbSet.AddAsync(obj);
+           await Db.SaveChangesAsync();
+            
             return obj;
         }
-             public virtual TModel Update(long id,TModel obj){
+             public async virtual Task<TModel> Update(long id,TModel obj){
          
-              var curModel = DbSet.FirstOrDefault(m => m.Id == id);
+              var curModel = await DbSet.FirstOrDefaultAsync(m => m.Id.Equals(id));
+              if(curModel != null){
+              Db.Entry(curModel).CurrentValues.SetValues(curModel);
+               await Db.SaveChangesAsync();
            
-                var index = DbSet.IndexOf(curModel);
-            
-             
-               obj.Id= id;
-              DbSet[index] = obj;
-                   return obj;
+                 
+              }
+                return obj;
              
         }
         
-             public  virtual void Delete(long id){
+             public  async virtual Task Delete(long id){
          
-              var model= DbSet.FirstOrDefault(m => m.Id == id);
-              DbSet.Remove(model);
-              
+              var curModel = await DbSet.FirstOrDefaultAsync(m => m.Id.Equals(id));
+              if(curModel != null){
+                 DbSet.Remove(curModel);
+              }
+             
+                 await Db.SaveChangesAsync();
+           
         }
-         public  virtual TModel  Find(long id){
+         public  async virtual Task<TModel>  Find(long id){
          
-              var model= DbSet.FirstOrDefault(m => m.Id == id);
-             return model;
-              
+             var curModel = await DbSet.FirstOrDefaultAsync(m => m.Id.Equals(id));
+             
+                 return curModel;
+                         
         }
-              public  virtual TModel[]  All(){
-         
-              var result= DbSet.ToArray();
-             return result;
+              public async  virtual Task<TModel[]>  All(){
+              
+              
+             return  await Task.Run(()=> {
+                var allEllementis = DbSet.AsEnumerable();
+                var result = allEllementis.ToArray();
+                return result;
+             });
               
         }
 

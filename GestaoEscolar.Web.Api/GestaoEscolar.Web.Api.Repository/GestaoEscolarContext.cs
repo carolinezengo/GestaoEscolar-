@@ -4,23 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.XPath;
 using GestaoEscolar.Web.Api.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestaoEscolar.Web.Api.Repository
 {
-    public class GestaoEscolarDB
+    public class GestaoEscolarContext : DbContext
     {
-        public List<Aluno> Alunos {get; set;}
-         public List<Disciplina> Disciplinas {get; set;}
-          public List<AlunoDisciplina> AlunoDisciplinas {get; set;}
-         public List<Turma> Turmas {get; set;}
+        public DbSet<Aluno> Alunos {get; set;}
+         public DbSet<Disciplina> Disciplinas {get; set;}
+          public DbSet<AlunoDisciplina> AlunoDisciplinas {get; set;}
+         public DbSet<Turma> Turmas {get; set;}
+        public GestaoEscolarContext(DbContextOptions options)
+        :base(options){
 
-         public GestaoEscolarDB(){
-            Alunos = new List<Aluno>();
-            Disciplinas = new List<Disciplina>();
-            AlunoDisciplinas = new List<AlunoDisciplina>();
-            Turmas = new List<Turma>();
-         }
-         public List<TModel> Set<TModel>()
+        }
+     
+         public DbSet<TModel> Set<TModel>()
          {
             var typeList = typeof(List<TModel>);
             var typeDb = this.GetType();
