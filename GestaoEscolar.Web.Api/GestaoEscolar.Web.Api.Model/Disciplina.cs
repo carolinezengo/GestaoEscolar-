@@ -8,6 +8,6 @@ namespace GestaoEscolar.Web.Api.Model
     public class Disciplina : Model
     {
         public string Descricao { get; set; }
-        public AlunoDisciplina[]? AlunoDisciplinas { get; set; }
+        public virtual ICollection<AlunoDisciplina>? AlunoDisciplinas { get; set; }
     }
 }

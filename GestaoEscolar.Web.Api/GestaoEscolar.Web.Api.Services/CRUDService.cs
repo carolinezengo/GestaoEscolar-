@@ -15,29 +15,29 @@ namespace GestaoEscolar.Web.Api.Services
         {
         }
 
-        public virtual TModel Add(TModel obj)
+        public async virtual Task<TModel> Add(TModel obj)
         {
-            var result = Repository.Insert(obj);
+            var result = await Repository.Insert(obj);
             return result;
         }
-         public virtual TModel Replace(long id, TModel obj)
+         public async virtual Task<TModel> Replace(long id, TModel obj)
         {
-            var result = Repository.Update(id,obj);
+            var result = await Repository.Update(id,obj);
             return result;
         }
-         public virtual void Remove(long id)
+         public async virtual void Remove(long id)
         {
-             Repository.Delete(id);
+            await Repository.Delete(id);
            
         }
-         public virtual TModel Single(long id)
+         public async virtual Task<TModel> Single(long id)
         {
-            var result = Repository.Find(id);
+            var result = await Repository.Find(id);
             return result;
         }
-         public virtual TModel[] All()
+         public async  virtual Task<TModel[]> All()
         {
-            var result = Repository.All();
+            var result = await Repository.All();
             return result;
         }
     }
