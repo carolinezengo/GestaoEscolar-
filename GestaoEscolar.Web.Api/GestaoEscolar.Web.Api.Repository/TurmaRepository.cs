@@ -8,7 +8,7 @@ namespace GestaoEscolar.Web.Api.Repository
 {
     public class TurmaRepository: Repository<Turma>
     {
-        public TurmaRepository(GestaoEscolarDB db): base(db)
+        public TurmaRepository(GestaoEscolarContext db): base(db)
         {
             
         }

@@ -15,3 +15,4 @@ C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\
 C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net6.0\refint\GestaoEscolar.Web.Api.Services.dll
 C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net6.0\GestaoEscolar.Web.Api.Services.pdb
 C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net6.0\ref\GestaoEscolar.Web.Api.Services.dll
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Services\obj\Debug\net6.0\GestaoEscolar.Web.Api.Services.sourcelink.json

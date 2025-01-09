@@ -13,3 +13,6 @@ C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\obj\Debu
 C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\obj\Debug\net6.0\refint\GestaoEscolar.Web.Api.Repository.dll
 C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\obj\Debug\net6.0\GestaoEscolar.Web.Api.Repository.pdb
 C:\GESTAOESCOLAR\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\obj\Debug\net6.0\ref\GestaoEscolar.Web.Api.Repository.dll
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\obj\Debug\net6.0\GestaoEscolar.Web.Api.Repository.sourcelink.json
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\bin\Debug\net6.0\GestaoEscolar.Web.Api.Repository.runtimeconfig.json
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.Repository\obj\Debug\net6.0\GestaoEscolar.Web.Api.Repository.genruntimeconfig.cache
