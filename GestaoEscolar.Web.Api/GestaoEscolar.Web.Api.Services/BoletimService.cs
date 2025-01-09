@@ -5,11 +5,8 @@ using System.Threading.Tasks;
 using System.Xml.XPath;
 using GestaoEscolar.Web.Api.Model;
 using GestaoEscolar.Web.Api.Repository;
-using Microsoft.EntityFrameworkCore.Design
-();
 
 
-using GestaoEscolar.Web.Api.Repository;
 namespace GestaoEscolar.Web.Api.Services
 {
     public class BoletimService : CRUDService<AlunoDisciplina>
