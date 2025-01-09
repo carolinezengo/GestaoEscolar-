@@ -10,7 +10,7 @@ namespace GestaoEscolar.Web.Api.Repository
 {
     public class GestaoEscolarContextFactory : IDesignTimeDbContextFactory<GestaoEscolarContext>
     {
-        public GestaoEscolarContext CreateDbContext(string[] args)
+        public GestaoEscolarContext CreateDbContext(string[] args = null)
         {
            var basePath = Directory.GetCurrentDirectory();
            var appsettingFIleName = "appsettings.json";

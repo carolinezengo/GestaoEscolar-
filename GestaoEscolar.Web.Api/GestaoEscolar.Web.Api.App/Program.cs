@@ -15,7 +15,9 @@ builder.Services.AddControllers()
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<GestaoEscolarDB>();
+
+builder.Services.AddSingleton<GestaoEscolarContextFactory>();
+builder.Services.AddTransient(opto => opto.GetService<GestaoEscolarContextFactory>().CreateDbContext());
 builder.Services.AddScoped<AlunoRepository>();
 builder.Services.AddScoped<AlunoDisciplinaRepository>();
 builder.Services.AddScoped<TurmaRepository>();
