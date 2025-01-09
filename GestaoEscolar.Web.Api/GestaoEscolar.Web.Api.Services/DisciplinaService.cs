@@ -19,32 +19,6 @@ namespace GestaoEscolar.Web.Api.Services
    
        
        
-         public override Disciplina Replace(long id, Disciplina obj)
-        {
-            var disciplinaModel = base.Add(obj);
-            var AlunoDisciplinaDAO= disciplinaModel.AlunoDisciplinas ?? new AlunoDisciplina[] {};
-            var AlunoDisciplinas = AlunoDisciplinaDAO.ToList();
-             AlunoDisciplinas.ForEach(alunoDisciplina =>{ alunoDisciplina.Disciplina = disciplinaModel;
-             AlunoDisciplinaService.Replace(alunoDisciplina.Id, alunoDisciplina);
-             
-               
-             });
-            return disciplinaModel;
-        }
-           public override void Remove(long id)
-        {
-            var disciplinaModel = Repository.Find(id);
-            base.Remove(id);
-            if(!(disciplinaModel is null ))
-            {
-                var alunoDisciplinaDAO = disciplinaModel.AlunoDisciplinas ?? new AlunoDisciplina[] {};
-                var alunoDisciplinas= alunoDisciplinaDAO.ToList();
-                alunoDisciplinas.ForEach(alunoDisciplina => {
-                    AlunoDisciplinaService.Remove(alunoDisciplina.Id);
-
-                });
-            }
-        }
 
     }
         

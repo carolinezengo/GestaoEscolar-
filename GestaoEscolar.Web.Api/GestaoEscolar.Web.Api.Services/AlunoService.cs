@@ -13,44 +13,67 @@ namespace GestaoEscolar.Web.Api.Services
         :base(repository){
            AlunoDisciplinaService = alunoDisciplinaService;
         }
-        public override Aluno Add(Aluno obj)
+         private async Task<Aluno> Map (Aluno obj)
         {
-            var alunoModel = base.Add(obj);
-            var AlunoDisciplinaDAO= obj.AlunoDisciplina ?? new AlunoDisciplina[] {};
-            var AlunoDisciplinas = AlunoDisciplinaDAO.ToList();
-             AlunoDisciplinas.ForEach(alunoDisciplina =>{ alunoDisciplina.Aluno = alunoModel;
-             AlunoDisciplinaService.Add(alunoDisciplina);
-             
-               
-             });
-            return alunoModel;
-        }
-         public override Aluno Replace(long id, Aluno obj)
-        {
-            var alunoModel = base.Add(obj);
-            var AlunoDisciplinaDAO= obj.AlunoDisciplina ?? new AlunoDisciplina[] {};
-            var AlunoDisciplinas = AlunoDisciplinaDAO.ToList();
-             AlunoDisciplinas.ForEach(alunoDisciplina =>{ alunoDisciplina.Aluno = alunoModel;
-             AlunoDisciplinaService.Replace(alunoDisciplina.Id, alunoDisciplina);
-             
-               
-             });
-            return alunoModel;
-        }
-           public override void Remove(long id)
-        {
-            var alunoModel = Repository.Find(id);
-            base.Remove(id);
-            if(!(alunoModel is null ))
-            {
-                var alunoDisciplinaDAO = alunoModel.AlunoDisciplina ?? new AlunoDisciplina[] {};
-                var alunoDisciplinas= alunoDisciplinaDAO.ToList();
-                alunoDisciplinas.ForEach(alunoDisciplina => {
-                    AlunoDisciplinaService.Remove(alunoDisciplina.Id);
+            return await Task.Run(() => {
+                var turma = obj.Turma;
+                
+                obj.Turma=null;
+              
 
-                });
-            }
+                if(!(turma is null))
+                {
+                    obj.IdTurma=turma.Id;
+
+                }
+                 
+                return obj;
+            });
+
         }
+
+        public  override async  Task<Aluno> Add(Aluno obj)
+        {
+        
+            var alunoDisciplinas = obj.AlunoDisciplina ?? new AlunoDisciplina[] {};
+            
+             obj.AlunoDisciplina= null;
+             var model = await Map(obj);
+             var alunoModel = await base.Add(model);
+
+             var alunoDisciplinaList= alunoDisciplinas.ToList();
+             alunoDisciplinaList.ForEach(async alunoDisciplina => {alunoDisciplina.Id = 0;
+              alunoDisciplina.Aluno = alunoModel;
+              await AlunoDisciplinaService.Add(alunoDisciplina);
+              } );
+              var result = await base.Single(model.Id);
+              
+
+               
+           
+            return result;
+        }
+         public async override Task<Aluno> Replace(long id, Aluno obj)
+        {
+              var AlunoDisciplinas = obj.AlunoDisciplina ?? new AlunoDisciplina[] {};
+            
+             obj.AlunoDisciplina= null;
+             var model = await Map(obj);
+             var alunoModel = await base.Replace(id,model);
+
+             var alunoDisciplinaList= AlunoDisciplinas.ToList();
+             alunoDisciplinaList.ForEach(async alunoDisciplina => {alunoDisciplina.Id = 0;
+              alunoDisciplina.Aluno = alunoModel;
+              await AlunoDisciplinaService.Replace(alunoDisciplina.Id,alunoDisciplina);
+              } );
+              var result = await base.Single(model.Id);
+              
+
+               
+           
+            return result;
+        }
+          
 
     }
 }

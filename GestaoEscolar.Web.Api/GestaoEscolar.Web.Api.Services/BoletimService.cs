@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.XPath;
 using GestaoEscolar.Web.Api.Model;
+using GestaoEscolar.Web.Api.Repository;
+using Microsoft.EntityFrameworkCore.Design
+();
+
 
 using GestaoEscolar.Web.Api.Repository;
 namespace GestaoEscolar.Web.Api.Services
@@ -13,37 +17,45 @@ namespace GestaoEscolar.Web.Api.Services
         public BoletimService(AlunoDisciplinaRepository repository) : base(repository)
         {
         }
-       public AlunoDisciplina[] AtualizarNotas (AlunoDisciplina[] alunoDisciplinas)
+       public async  Task<AlunoDisciplina[]> AtualizarNotas (AlunoDisciplina[] alunoDisciplinas)
        {
-        var currentAlunoDisciplina = Repository.All();
-        var selectAlunoDisciplina = currentAlunoDisciplina.Join
-        (alunoDisciplinas, a=> a.Id, b=> b.Id , (a,b) => 
-        new {
-            currentElement =a, ValueElement= b});
-         var updateAlunoDisciplina = selectAlunoDisciplina.ToList();
-         updateAlunoDisciplina.ForEach(uad => {
-            uad.currentElement.Nota1= uad.ValueElement.Nota1;
-             uad.currentElement.Nota2= uad.ValueElement.Nota2;
-              uad.currentElement.Nota3= uad.ValueElement.Nota3;
-               uad.currentElement.Nota4= uad.ValueElement.Nota4;
+        var currentAlunoDisciplina = await Repository.All();
+        var selectAlunoDisciplina = currentAlunoDisciplina
+           .Join(alunoDisciplinas,
+         a => a.Id, b=>b.Id,(a,b)=> new {Id = a.Id,
+               CurrentElement = a,
+              ValueElement =b });
+       
+         var updateAlunoDisciplinas = selectAlunoDisciplina.ToList();
+         updateAlunoDisciplinas.ForEach(async uad => {
+            uad.CurrentElement.Nota1= uad.ValueElement.Nota1;
+             uad.CurrentElement.Nota2= uad.ValueElement.Nota2;
+              uad.CurrentElement.Nota3= uad.ValueElement.Nota3;
+               uad.CurrentElement.Nota4= uad.ValueElement.Nota4;
+        
+        
+         await Repository.Update(uad.Id, uad.CurrentElement);
+ 
+ });
 
-        });
-        var updateAlunoDisciplinas = updateAlunoDisciplina.Select(uad => uad.currentElement);
-        var result = updateAlunoDisciplinas.ToArray();
+        var updateAlunoDisciplina = updateAlunoDisciplinas.Select(uad => uad.CurrentElement);
+        var result = updateAlunoDisciplina.ToArray();
         return result;
        }
-       public AlunoDisciplina[] RetornaDisciplina (long id)
+
+
+       public async Task<AlunoDisciplina[]> RetornaDisciplina (long id)
        {
-        var alunoDisciplinas = Repository.All();
-        var alunoDisciplinasDisciplinas = alunoDisciplinas.Where(ad => ad.Disciplina.Id == id);
+        var alunoDisciplinas = await Repository.All();
+        var alunoDisciplinasDisciplinas = alunoDisciplinas.Where(ad => ad.IdDisciplina == id);
         var result = alunoDisciplinasDisciplinas.ToArray();
         return result;
 
        }
-            public AlunoDisciplina[] RetornaAluno (long id)
+            public async Task<AlunoDisciplina[]> RetornaAluno (long id)
        {
-        var alunoDisciplinas = Repository.All();
-        var alunoDisciplinasAluno = alunoDisciplinas.Where(ad => ad.Aluno.Id == id);
+        var alunoDisciplinas = await Repository.All();
+        var alunoDisciplinasAluno = alunoDisciplinas.Where(ad => ad.IdDisciplina == id);
         var result = alunoDisciplinasAluno.ToArray();
         return result;
 
