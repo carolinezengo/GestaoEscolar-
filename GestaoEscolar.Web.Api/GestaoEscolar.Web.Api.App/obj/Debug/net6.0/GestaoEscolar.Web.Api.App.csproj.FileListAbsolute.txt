@@ -56,7 +56,9 @@ C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.
 C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\Npgsql.dll
 C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\System.Collections.Immutable.dll
-C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\System.Text.Json.dll
 C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\obj\Debug\net6.0\GestaoEscolar.Web.Api.App.sourcelink.json
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\GestaoEscolar\GestaoEscolar.Web.Api\GestaoEscolar.Web.Api.App\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

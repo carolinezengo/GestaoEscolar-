@@ -22,10 +22,10 @@ namespace GestaoEscolar.Web.Api.Repository
            if(!File.Exists(appsettingFIleNamePath))
            {
             basePath=Directory.GetCurrentDirectory();
-            basePath=Path.Combine(basePath, "...", "GestaoEscolar.Wb.Api.App");
+            basePath=Path.Combine(basePath, "..", "GestaoEscolar.Web.Api.App");
            }
            #endif
-           var configuration= new ConfigurationBuilder()
+         var configuration= new ConfigurationBuilder()
                                .SetBasePath(basePath)
                                .AddJsonFile(appsettingFIleName)
                                .Build();

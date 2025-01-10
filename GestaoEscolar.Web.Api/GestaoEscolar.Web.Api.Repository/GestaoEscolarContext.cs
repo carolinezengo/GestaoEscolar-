@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Xml.XPath;
+
 using GestaoEscolar.Web.Api.Model;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,11 +11,10 @@ namespace GestaoEscolar.Web.Api.Repository
           public DbSet<AlunoDisciplina> AlunoDisciplinas {get; set;}
          public DbSet<Turma> Turmas {get; set;}
        
-     public GestaoEscolarContext(DbContextOptions<GestaoEscolarContext> options)
+     public GestaoEscolarContext(DbContextOptions<GestaoEscolarContext>options)
      : base(options)
      {
 
-     
      }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
