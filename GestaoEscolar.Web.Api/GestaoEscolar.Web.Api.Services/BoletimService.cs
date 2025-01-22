@@ -14,7 +14,7 @@ namespace GestaoEscolar.Web.Api.Services
         public BoletimService(AlunoDisciplinaRepository repository) : base(repository)
         {
         }
-       public async  Task<AlunoDisciplina[]> AtualizarNotas (AlunoDisciplina[] alunoDisciplinas)
+       public async Task<AlunoDisciplina[]> AtualizarNotas (AlunoDisciplina[] alunoDisciplinas)
        {
         var currentAlunoDisciplina = await Repository.All();
         var selectAlunoDisciplina = currentAlunoDisciplina
@@ -24,15 +24,15 @@ namespace GestaoEscolar.Web.Api.Services
               ValueElement =b });
        
          var updateAlunoDisciplinas = selectAlunoDisciplina.ToList();
-         updateAlunoDisciplinas.ForEach(async uad => {
+         updateAlunoDisciplinas.ForEach(uad => {
             uad.CurrentElement.Nota1= uad.ValueElement.Nota1;
              uad.CurrentElement.Nota2= uad.ValueElement.Nota2;
               uad.CurrentElement.Nota3= uad.ValueElement.Nota3;
                uad.CurrentElement.Nota4= uad.ValueElement.Nota4;
         
         
-         await Repository.Update(uad.Id, uad.CurrentElement);
- 
+         var task = Repository.Update(uad.Id, uad.CurrentElement);
+            
  });
 
         var updateAlunoDisciplina = updateAlunoDisciplinas.Select(uad => uad.CurrentElement);

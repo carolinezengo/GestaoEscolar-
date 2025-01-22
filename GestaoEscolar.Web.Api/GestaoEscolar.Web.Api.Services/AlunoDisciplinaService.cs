@@ -7,14 +7,11 @@ namespace GestaoEscolar.Web.Api.Services
 {
     public class AlunoDisciplinaService : CRUDService<AlunoDisciplina>
     {
-        private AlunoService AlunoService {get; set;}
-        private DisciplinaService DisciplinaService {get; set;}
-        public AlunoDisciplinaService(AlunoDisciplinaRepository repository,
-                                      AlunoService alunoService, DisciplinaService disciplinaService ) 
-                                      : base(repository)
+        
+        public AlunoDisciplinaService(AlunoDisciplinaRepository repository) 
+          : base(repository)
         {
-            AlunoService = alunoService;
-            DisciplinaService = disciplinaService;
+            
         }
 
         private async Task<AlunoDisciplina> Map (AlunoDisciplina obj)

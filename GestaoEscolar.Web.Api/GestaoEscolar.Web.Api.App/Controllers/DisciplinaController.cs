@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using GestaoEscolar.Web.Api.Model;
 using GestaoEscolar.Web.Api.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -20,47 +17,47 @@ namespace GestaoEscolar.Web.Api.App.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return await Task.Run(() =>{
-                var result = DisciplinaService.All();
+           
+                var result = await DisciplinaService.All();
                 return Ok(result);
 
-            });
+            
         }
         [HttpGet("{id}")]
          public async Task<IActionResult> GetById(long id)
         {
-            return await Task.Run(() =>{
-                var result = DisciplinaService.Single(id);
+            
+                var result = await DisciplinaService.Single(id);
                 return Ok(result);
 
-            });
+          
         }
             [HttpPost]
         public async Task<IActionResult> Post(Disciplina disciplina)
         {
-            return await Task.Run(() =>{
-                var result = DisciplinaService.Add(disciplina);
+           
+                var result = await DisciplinaService.Add(disciplina);
                 return Ok(result);
 
-            });
+           
         }
             [HttpPut("{id}")]
         public async Task<IActionResult> Put(long id, Disciplina disciplina)
         {
-            return await Task.Run(() =>{
-                var result = DisciplinaService.Replace(id, disciplina);
+            
+                var result = await DisciplinaService.Replace(id, disciplina);
                 return Ok(result);
 
-            });
+           
         }
         [HttpDelete("{id}")]
         public  async Task<IActionResult> Delete(long id)
         {
-            return await Task.Run(() =>{
-               DisciplinaService.Remove(id);
+            
+             await DisciplinaService.Remove(id);
                 return Ok();
 
-            });
+           
         }
 
         

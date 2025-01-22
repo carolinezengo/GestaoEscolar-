@@ -22,47 +22,45 @@ namespace GestaoEscolar.Web.Api.App.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return await Task.Run(() =>{
-                var result = TurmaService.All();
+            
+                var result = await TurmaService.All();
                 return Ok(result);
 
-            });
+          
         }
         [HttpGet("{id}")]
          public async Task<IActionResult> GetById(long id)
         {
-            return await Task.Run(() =>{
-                var result = TurmaService.Single(id);
+           
+                var result = await TurmaService.Single(id);
                 return Ok(result);
 
-            });
+          
         }
             [HttpPost]
         public async Task<IActionResult> Post(Turma turma)
         {
-            return await Task.Run(() =>{
-                var result = TurmaService.Add(turma);
+           
+                var result = await TurmaService.Add(turma);
                 return Ok(result);
 
-            });
+            
         }
             [HttpPut("{id}")]
         public async Task<IActionResult> Put(long id, Turma turma)
         {
-            return await Task.Run(() =>{
-                var result = TurmaService.Replace(id, turma);
+           
+                var result = await TurmaService.Replace(id, turma);
                 return Ok(result);
 
-            });
+           
         }
         [HttpDelete("{id}")]
-        public  async Task<IActionResult> Delete(long id)
+        public async Task<IActionResult> Delete(long id)
         {
-            return await Task.Run(() =>{
-                TurmaService.Remove(id);
+            await TurmaService.Remove(id);
                 return Ok();
 
-            });
         }
 
         

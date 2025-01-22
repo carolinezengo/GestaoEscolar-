@@ -25,9 +25,8 @@ namespace GestaoEscolar.Web.Api.Services
             var result = await Repository.Update(id,obj);
             return result;
         }
-         public async virtual void Remove(long id)
-        {
-            await Repository.Delete(id);
+         public async virtual  Task Remove(long id)
+        {     await Repository.Delete(id);
            
         }
          public async virtual Task<TModel> Single(long id)
@@ -35,7 +34,7 @@ namespace GestaoEscolar.Web.Api.Services
             var result = await Repository.Find(id);
             return result;
         }
-         public async  virtual Task<TModel[]> All()
+         public async virtual Task<TModel[]> All()
         {
             var result = await Repository.All();
             return result;

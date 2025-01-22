@@ -20,47 +20,47 @@ namespace GestaoEscolar.Web.Api.App.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return await Task.Run(() =>{
-                var result = AlunoService.All();
+           
+                var result = await AlunoService.All();
                 return Ok(result);
 
-            });
+       
         }
         [HttpGet("{id}")]
          public async Task<IActionResult> GetById(long id)
         {
-            return await Task.Run(() =>{
-                var result = AlunoService.Single(id);
+           
+                var result = await AlunoService.Single(id);
                 return Ok(result);
 
-            });
+            
         }
             [HttpPost]
         public async Task<IActionResult> Post(Aluno aluno)
         {
-            return await Task.Run(() =>{
-                var result = AlunoService.Add(aluno);
+           
+                var result = await AlunoService.Add(aluno);
                 return Ok(result);
 
-            });
+           
         }
             [HttpPut("{id}")]
         public async Task<IActionResult> Put(long id, Aluno aluno)
         {
-            return await Task.Run(() =>{
-                var result = AlunoService.Replace(id, aluno);
+           
+                var result = await AlunoService.Replace(id, aluno);
                 return Ok(result);
 
-            });
+           
         }
         [HttpDelete("{id}")]
-        public  async Task<IActionResult> Delete(long id)
+        public async Task<IActionResult> Delete(long id)
         {
-            return await Task.Run(() =>{
-                AlunoService.Remove(id);
+
+            await AlunoService.Remove(id);
                 return Ok();
 
-            });
+          
         }
 
         
