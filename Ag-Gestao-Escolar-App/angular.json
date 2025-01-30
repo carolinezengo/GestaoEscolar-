@@ -3,11 +3,18 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Ag-Gestao-Escolar-App": {
+    "ag-gestao-escolar-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "sass",
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
         }
       },
       "root": "",
@@ -26,22 +33,19 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+               {  "glob": "**/*",
+               "input": "public"},
+
+               "src/favicon.ico",
+                "src/assets"
+
             ],
             "styles": [
               "src/styles.sass",
-              "./node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js",
-                        "./node_modules/@popperjs/core/dist/umd/popper-base.min.js"],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": [ "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+            "./node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -62,13 +66,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ]
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -77,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Ag-Gestao-Escolar-App:build:production"
+              "buildTarget": "ag-gestao-escolar-app:build:production"
             },
             "development": {
-              "buildTarget": "Ag-Gestao-Escolar-App:build:development"
+              "buildTarget": "ag-gestao-escolar-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -113,6 +111,6 @@
     }
   },
   "cli": {
-    "analytics": "29938373-7157-43fa-9c68-f95d60f99eb8"
+    "analytics": "1708120a-ba5a-4329-a173-7e4672f98eca"
   }
 }

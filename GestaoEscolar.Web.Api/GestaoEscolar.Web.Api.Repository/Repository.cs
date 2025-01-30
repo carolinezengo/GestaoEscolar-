@@ -28,7 +28,7 @@ namespace GestaoEscolar.Web.Api.Repository
          
               var curModel = await DbSet.FirstOrDefaultAsync(m => m.Id.Equals(id));
               if(curModel != null){
-              Db.Entry(curModel).CurrentValues.SetValues(curModel);
+              Db.Entry(curModel).CurrentValues.SetValues(obj);
                await Db.SaveChangesAsync();
            
                  

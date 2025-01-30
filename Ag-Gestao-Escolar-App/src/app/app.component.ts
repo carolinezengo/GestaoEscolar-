@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
+  standalone: false,
   styleUrl: './app.component.sass'
 })
 export class AppComponent {
-  title = 'Ag-Gestao-Escolar-App';
+  title = 'ag-gestao-escolar-app';
+  menu:boolean = true;
+
+  fecharMenu()
+  {
+    this.menu =!this.menu;
+  }
 }

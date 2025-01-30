@@ -28,6 +28,7 @@ namespace GestaoEscolar.Web.Api.Services
          public async virtual  Task Remove(long id)
         {     await Repository.Delete(id);
            
+           
         }
          public async virtual Task<TModel> Single(long id)
         {
