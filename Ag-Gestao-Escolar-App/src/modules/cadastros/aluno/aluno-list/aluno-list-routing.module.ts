@@ -4,8 +4,7 @@ import { AlunoListComponent } from './aluno-list.component';
 
 const routes: Routes = [{
   path:'',
-  component:AlunoListComponent
-
+  component: AlunoListComponent
 }];
 
 @NgModule({

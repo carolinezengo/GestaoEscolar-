@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AlunoFormComponent } from './aluno-form.component';
 
 const routes: Routes = [{
-  path:'',
+   path:'',
   component: AlunoFormComponent
 }];
 

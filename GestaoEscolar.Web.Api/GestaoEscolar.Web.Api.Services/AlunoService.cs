@@ -43,9 +43,10 @@ namespace GestaoEscolar.Web.Api.Services
              var alunoModel = await base.Add(model);
 
              var alunoDisciplinaList= alunoDisciplinas.ToList();
-             alunoDisciplinaList.ForEach(async alunoDisciplina => {alunoDisciplina.Id = 0;
+             alunoDisciplinaList.ForEach( alunoDisciplina => {alunoDisciplina.Id = 0;
               alunoDisciplina.Aluno = alunoModel;
-              await AlunoDisciplinaService.Add(alunoDisciplina);
+              var task = AlunoDisciplinaService.Add(alunoDisciplina);
+              task.Wait();
               } );
               var result = await base.Single(model.Id);
               
@@ -63,9 +64,10 @@ namespace GestaoEscolar.Web.Api.Services
              var alunoModel = await base.Replace(id,model);
 
              var alunoDisciplinaList= AlunoDisciplinas.ToList();
-             alunoDisciplinaList.ForEach(async alunoDisciplina => {alunoDisciplina.Id = 0;
+             alunoDisciplinaList.ForEach(alunoDisciplina => {alunoDisciplina.Id = 0;
               alunoDisciplina.Aluno = alunoModel;
-              await AlunoDisciplinaService.Replace(alunoDisciplina.Id,alunoDisciplina);
+             var task = AlunoDisciplinaService.Replace(alunoDisciplina.Id,alunoDisciplina);
+             task.Wait();
               } );
               var result = await base.Single(model.Id);
               

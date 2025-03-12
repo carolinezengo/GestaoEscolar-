@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using GestaoEscolar.Web.Api.Model;
 using GestaoEscolar.Web.Api.Services;
+using Microsoft.AspNetCore.Cors;
 
 
 namespace GestaoEscolar.Web.Api.App.Controllers
@@ -32,8 +33,9 @@ namespace GestaoEscolar.Web.Api.App.Controllers
                 return Ok(result);
            
         }
+        
 
-          [HttpGet("disciplina/{id}")]
+        [HttpGet("disciplina/{id}")]
 
         public async Task<IActionResult> GetByDisciplina(long id)
         {

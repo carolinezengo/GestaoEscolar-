@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule, NgIf } from '@angular/common';
+import { AsyncPipe, CommonModule, NgFor, NgIf } from '@angular/common';
 
 import { DisciplinaRoutingModule } from './disciplina-routing.module';
-import { DisciplinaFormComponent } from './disciplina-form/disciplina-form.component';
-import { FormsModule } from '@angular/forms';
+import { DisciplinaListComponent } from './disciplina-list/disciplina-list.component';
 
 
 @NgModule({
-  declarations: [DisciplinaFormComponent],
+  declarations: [
+    DisciplinaListComponent
+  ],
   imports: [
     CommonModule,
-    NgIf,
-   FormsModule,
+
+
     DisciplinaRoutingModule
   ]
 })

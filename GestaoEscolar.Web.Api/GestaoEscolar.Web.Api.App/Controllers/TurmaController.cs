@@ -4,21 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using GestaoEscolar.Web.Api.Model;
 using GestaoEscolar.Web.Api.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestaoEscolar.Web.Api.App.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class Turmaontroller : ControllerBase
+    public class TurmaController : ControllerBase
     {
         private TurmaService TurmaService;
 
-        public Turmaontroller(TurmaService turmaService)
+        public TurmaController(TurmaService turmaService)
         {
             TurmaService = turmaService;
             
         }
+        
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -37,12 +39,11 @@ namespace GestaoEscolar.Web.Api.App.Controllers
 
           
         }
-            [HttpPost]
+       [HttpPost]
         public async Task<IActionResult> Post(Turma turma)
         {
-           
-                var result = await TurmaService.Add(turma);
-                return Ok(result);
+          var result = await TurmaService.Add(turma);
+           return Ok(result);
 
             
         }

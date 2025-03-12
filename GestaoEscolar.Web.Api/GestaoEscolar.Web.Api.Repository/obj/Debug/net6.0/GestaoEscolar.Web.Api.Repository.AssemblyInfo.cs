@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestaoEscolar.Web.Api.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e41e3c86dc4692e5bebfc5c7ab24dfecc59fabab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d513f5794cd27bade30011bf78b96247a7ace354")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestaoEscolar.Web.Api.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestaoEscolar.Web.Api.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

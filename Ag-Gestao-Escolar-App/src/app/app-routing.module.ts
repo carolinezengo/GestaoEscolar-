@@ -12,18 +12,18 @@ const routes: Routes = [{
 {
   path:'cadastros',
   loadChildren:()=>
-    import('./modules/cadastros/cadastros.module')
+    import('../modules/cadastros/cadastros.module')
   .then(m => m.CadastrosModule)
 },
 {
   path:'lancamentos',
   loadChildren:()=>
-    import('./modules/lancamentos/lancamentos.module')
+    import('../modules/lancamentos/lancamentos.module')
   .then(m => m.LancamentosModule)
 },
 {path:'root',
   loadChildren:()=>
-    import('./modules/root/root.module')
+    import('../modules/root/root.module')
   .then(m => m.RootModule)
 }
 ]

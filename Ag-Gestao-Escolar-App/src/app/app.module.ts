@@ -4,8 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { NgIf } from '@angular/common';
-import { DisciplinaListComponent } from './modules/cadastros/disciplina/disciplina-list/disciplina-list.component';
+import { AsyncPipe, NgIf } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import { DisciplinaListComponent } from './modules/cadastros/disciplina/discipli
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+
     NgIf,
   ],
   providers: [],

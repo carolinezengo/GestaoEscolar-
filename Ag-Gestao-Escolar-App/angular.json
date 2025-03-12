@@ -21,7 +21,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
-        "build": {
+         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/ag-gestao-escolar-app",
@@ -73,10 +73,13 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+
           "configurations": {
             "production": {
               "buildTarget": "ag-gestao-escolar-app:build:production"
+
             },
+
             "development": {
               "buildTarget": "ag-gestao-escolar-app:build:development"
             }
@@ -89,6 +92,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+
             "polyfills": [
               "zone.js",
               "zone.js/testing"
